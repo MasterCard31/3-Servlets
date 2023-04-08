@@ -10,7 +10,7 @@
   <head><title>Identificacion</title></head>
   <body bgcolor='yellow'>
     <center><H2>Identificacion de usuario</H2>
-    <form method='pos't action="/WebApp03/ServletVerifica">
+    <form method='post' action="/WebApp03/ServletVerifica">
         <table>
             <tr><td>Codigo: </td>
                 <td> <input name='xcod' size='10'> </td></tr>
