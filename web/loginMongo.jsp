@@ -9,15 +9,23 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Iniciar sesión</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
-        <form action="/WebApp03/ServletLoginMongo" method="post">
-        <label for="username">Nombre de usuario:</label>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password"><br>
-        <input type="submit" value="Iniciar sesión">
-</form>
+        <form class="row g-3 m-3 " action="/WebApp03/ServletMongo" method="post">
+            <div class="col-auto">
+                <label for="username" class="visually-hidden">Nombre de usuario:</label>
+                <input type="text" name="username" class="form-control" id="username" placeholder="User name">
+            </div>
+            <div class="col-auto">
+                <label for="password" class="visually-hidden">Password</label>
+                <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Iniciar sesión</button>
+            </div>
+        </form>
+
     </body>
 </html>
